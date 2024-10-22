@@ -6,6 +6,35 @@
 
 using namespace std;
 
+class Comentario {
+private:
+    int id;
+    string texto;
+public:
+    Comentario();
+    string getTexto();
+    void escribirTexto();
+    void generarId();
+};
+
+class Usuario {
+private:
+    int dni;
+    string nombre;
+    int edad;
+    vector<Comentario>Comentarios;
+public:
+    Usuario();
+    int getDNI();
+    string getNombre();
+    int getEdad();
+    void setDNI(int _dni);
+    void setNombre(string _nombre);
+    void setEdad(int _edad);
+    void comentar();
+    void crearUsuario();
+};
+
 class Noticia {
 private:
     string titulo;
